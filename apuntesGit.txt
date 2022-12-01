@@ -6,4 +6,5 @@ git add . (guarda TODOS los documentos)(para guardar uno puntual "git add "nombr
 
 git commit -m "primer commit" (le da un nombre a los cambios guardados anteriormente)
 
-CLASE DE GITHUB (repaso en 26 min)
+CLASE DE GITHUB (repaso en 1:16 min)
+	-presentacion del perfil de github
