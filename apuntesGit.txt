@@ -1,0 +1,9 @@
+git init(inicia git) (se ponen las carpetas en verde)
+
+git status(nos indica que faltan guardar documentos)
+
+git add . (guarda TODOS los documentos)(para guardar uno puntual "git add "nombre del documento")
+
+git commit -m "primer commit" (le da un nombre a los cambios guardados anteriormente)
+
+CLASE DE GITHUB (repaso en 26 min)

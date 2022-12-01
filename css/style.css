@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------///////////------------- HEADER ---------///////////-------------*/
+.grid-container {
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 15vh auto 100px;
+    grid-template-areas: 
+    header header header
+    main main main
+    footer footer footer;
+}
+.header {
+    background-color: #252627;
+    width: 100%;
+    height: 15vh;
+    /* border-bottom: 5px solid #FFFAFF; */
+    position: sticky; 
+    /* --POSITION: (estaba como position: fixed) */
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+.header a {
+    padding: 5px;
+}
+.header img {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+.header nav ul li {
+    margin: 3px 6px 3px 6px;
+    text-decoration: none;
+}
+.header nav ul li a {
+    color:#FFFAFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.8s;
+}
+.header nav ul li a:hover {
+    background-color: #BB0A21;
+}
+
+/*---------//////////////------------- MAIN ---------//////////////-------------*/
+
+main {
+    grid-area: main;
+}
+.hero {
+    text-align: center;
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* margin: 0px 10px 0px 10px; */
+
+}
+
+.hero h1 {
+    color: #BB0A21;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    background-color: #FFFAFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #FFFAFF;
+    font-size: 20px;
+    background-color: #252627;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 1s;
+}
+.hero a:hover {
+    transform: scale(1.2);
+}
+
+.hero p {
+    color: #FFFAFF;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #252627;
+    /* text-align: center; */
+    background-color: #FFFAFF;
+    color: #252627;
+    border-radius: 5px;
+}
+
+
+/* -----------------------galeria */
+
+.galeria {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.galeria h2{
+    text-align: center;
+}
+.galeria img {
+    padding: 10px;
+}
+.imgG1:hover{
+    transform: scale(1.2);
+}
+.imgG2:hover{
+    transform: scale(1.2);
+}
+.imgG3:hover{
+    transform: scale(1.2);
+}
+.imgG4:hover{
+    transform: scale(1.2);
+}
+.imgG5:hover{
+    transform: scale(1.2);
+}
+.imgG6:hover{
+    transform: scale(1.2);
+}
+/* ---------------------dondeEstamos */
+
+.dondeEstamos {
+    /* padding-top: 15px; */
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 50px;
+
+}
+.dondeEstamos h2 {
+    text-align: center;
+}
+
+/* -----------------------NuestrosCafes */
+
+.nuestrosCafes {
+    text-align: center;
+}
+
+.nuestrosCafes div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*--------------------- Combos */
+/* .combos h2 {
+    text-align: center;
+}
+
+.combos div {
+    width: 500px;
+    height: 450px;
+    border: 2px solid #BB0A21;
+    text-align: center;
+    display: inline-block;
+}
+
+.combos div img {
+    width: 500px;
+    height: 330px;
+}
+
+.contacto {
+    text-align: center;
+} */
+
+/* flebBox */
+
+.flex-container {
+    width: 100%;
+    /* border: 3px solid #252627; */
+    background-color: #FFFAFF;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-flow: column wrap; 
+    /* flex-flow: es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap  */
+}
+
+.comboLight {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px;
+    transition: 1s;
+}
+
+.comboLight img:hover{
+    transform: scale(1.2);
+}
+.comboAmericano {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+.comboAmericano img:hover{
+    transform: scale(1.2);
+}
+.comboLaccho {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+.comboLaccho img:hover{
+    transform: scale(1.2);
+}
+
+/* ------------------------Nosotros */
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 75vh;
+}
+
+
+/* --------------------------Contacto */
+
+.mainContacto {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 75vh;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    border: 3px solid #252627;
+    padding: 10px;
+}
+
+
+
+/*---------//////////////------------- FOOTER ---------//////////////-------------*/
+
+footer {
+    background-color: #252627;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    grid-area: footer;
+}
+
+footer a img {
+    width: 60px;
+    height: 60px;
+    
+}
+
+/* --MEDIA QUERY-- */
+
+/* -------1275 PX-------- */
+
+@media screen and (max-width: 1275px) {
+    .galeria01 {
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+    }
+    .divGaleria1 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .divGaleria2 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+
+/* -------850PX-------- */
+
+@media screen and (max-width: 850px) {
+    /* .galeria01 {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+    } */
+    .hero h1{
+        font-size: 45px;
+        padding: 9px;
+    }
+    .galeria div {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    
+    
+    .dondeEstamos {
+        margin: 0px;
+        padding: 30px 0px 30px 0px;
+    }
+
+    /* .divGaleria1 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .divGaleria2 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    } */
+
+    /* --COMBOS-- */
+.combos1 div img {
+    width: 400px;
+    height: auto;
+    }
+    .comboLight {
+        padding: 20px;
+    }
+    .comboAmericano {
+        padding: 20px;
+    }
+    .comboLaccho {
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .header nav ul li a {
+        padding: 0px;   
+    }
+}
+
+/* -------478PX-------- */
+
+@media screen and (max-width: 478px) {
+    .header {
+        flex-direction: column;
+    }
+    .header a {
+        padding: 0px;
+        
+    }
+    .header nav ul li {
+        padding: 0px 0px 6px 0px;
+    }
+    .hero h1{
+        font-size: 40px;
+        padding: 8px;
+        word-spacing: -2px;
+    }
+    .galeria div {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .divGaleria1 img {
+        width: 350px;
+        height: auto;
+     }
+     .divGaleria2 img {
+         width: 350px;
+         height: auto;
+      }
+      
+    .dondeEstamos iframe {
+        width: 300px;
+        height: 225px;
+        margin: 0px;
+    }
+    .combos1 div img {
+        width: 350px;
+        height: auto;
+        }
+}   
+
+/* -------436PX-------- */
+
+@media screen and (max-width: 436px) {
+    .header {
+        height: 18vh;
+    }
+    .galeria01 {
+       background-size: 250px;
+    }
+    .divGaleria1 img {
+       width: 325px;
+       height: auto;
+    }
+    .divGaleria2 img {
+        width: 325px;
+        height: auto;
+     }
+        
+    .dondeEstamos iframe {
+        width: 200px;
+        height: 150px;
+        margin: 0px;
+        }
+    .combos1 div img {
+        width: 300px;
+        height: auto;
+        }
+    .comboLight {
+        padding: 12px;
+    }
+    .comboAmericano {
+        padding: 12px;
+    }
+    .comboLaccho {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .divGaleria1 img {
+        width: 300px;
+        height: auto;
+        padding: 8px 0px 8px 0px;
+     }
+     .divGaleria2 img {
+         width: 300px;
+         height: auto;
+         padding: 8px 0px 8px 0px;
+      }
+      .dondeEstamos iframe {
+        width: 175px;
+      }
+}
+
+
+
+/* -------- TRANSITION-------- */
+
+/* define que propiedad especifica de debe cambiar */
+/* transition-propiety: width; */
+
+/* --define la duracion de la transicion-- */
+/* transition-duration: 3sec; */
+
+/* -Define una funcion para determinar como procederiala transicion a lo largo de toda su duracion, lo que permite cambiar la velocidad durante su curso- */
+/* transition-timing-function: steps(20, end); */
+
+/* -Define un periodo de tiempo para retrasar el inicio- */
+/* transition-delay: 5s;  */
+
+/*  !SHORTCUT  */
+/* transition: width 3s ease-in; */
