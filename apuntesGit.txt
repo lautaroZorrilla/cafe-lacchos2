@@ -1,4 +1,4 @@
-git init(inicia git) (se ponen las carpetas en verde)
+git init(inicia git) (se ponen las carpetas en verde)(SOLO SE HACE 1 VEZ POR PROYECTO)
 
 git status(nos indica que faltan guardar documentos)
 
@@ -6,5 +6,10 @@ git add . (guarda TODOS los documentos)(para guardar uno puntual "git add "nombr
 
 git commit -m "primer commit" (le da un nombre a los cambios guardados anteriormente)
 
+git push -u origin master
+
 CLASE DE GITHUB (repaso en 1:16 min)
 	-presentacion del perfil de github
+
+para crear enlace del sitio:
+repositorio>settings>pages
