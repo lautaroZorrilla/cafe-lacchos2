@@ -110,9 +110,9 @@ main {
     bottom: 15%;
     right: 5%;
     width: 200px;
-    height: 40px;
+    height: 60px;
     border: 2px solid #252627;
-    /* text-align: center; */
+    text-align: center;
     background-color: #FFFAFF;
     color: #252627;
     border-radius: 5px;
@@ -201,19 +201,15 @@ section h3 {
 }
 
 
-
+/* ---------------COMBOS--------------- */
 
 /* flebBox */
 
 .flex-container {
     width: 100%;
-    /* border: 3px solid #252627; */
     background-color: #FFFAFF;
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
     align-items: center;
-    /* flex-wrap: wrap; */
     flex-flow: column wrap; 
     /* flex-flow: es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap  */
 }
@@ -456,6 +452,17 @@ footer a img {
     .comboLaccho {
         padding: 12px;
     }
+
+    .comboLight img:hover{
+        transform: scale(1.1);
+    }
+    .comboAmericano img:hover{
+        transform: scale(1.1);
+    }
+    .comboLaccho img:hover{
+        transform: scale(1.1);
+    }
+
     .imgG1:hover{
         transform: scale(1.1);
     }
@@ -474,7 +481,9 @@ footer a img {
     .imgG6:hover{
         transform: scale(1.1);
     }
-    
+    .nosotros {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 361px) {
@@ -508,6 +517,9 @@ footer a img {
     }
     .cafeVienes:hover {
         transform: scale(1.1);
+    }
+    .fixed {
+        display: none;
     }
 }
 
