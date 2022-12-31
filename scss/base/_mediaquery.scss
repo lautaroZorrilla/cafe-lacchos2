@@ -1,0 +1,226 @@
+/* --MEDIA QUERY-- */
+
+/* -------1275 PX-------- */
+
+@media screen and (max-width: 1275px) {
+    .galeria .galeria01 {
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+    }
+    .galeria .galeria01 .divGaleria1 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .galeria .galeria01 .divGaleria2 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+
+/* -------850PX-------- */
+
+@media screen and (max-width: 850px) {
+    .hero h1{
+        font-size: 45px;
+        padding: 9px;
+    }
+    
+    .galeria .galeria01 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    
+    
+    .dondeEstamos {
+        margin: 0px;
+        padding: 30px 0px 30px 0px;
+    }
+
+    
+
+    /* --COMBOS-- */
+    .flex-contaiiner .combos1 div img {
+    width: 400px;
+    height: auto;
+    }
+    .flex-contaiiner .combos1 .comboLight {
+        padding: 20px;
+    }
+    .flex-contaiiner .combos1 .comboAmericano {
+        padding: 20px;
+    }
+    .flex-contaiiner .combos1 .comboLaccho {
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .header nav ul li a {
+        padding: 0px;   
+    }
+    .galeria .galeria01 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+/* -------478PX-------- */
+
+@media screen and (max-width: 478px) {
+    .header {
+        flex-direction: column;
+    }
+    .header a {
+        padding: 0px;
+        
+    }
+    .header nav ul li {
+        padding: 0px 0px 6px 0px;
+    }
+    .hero h1{
+        font-size: 40px;
+        padding: 8px;
+        word-spacing: -2px;
+    }
+    .galeria .galeria01 {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+   
+    
+    .galeria .galeria01 .divGaleria1 img {
+        width: 350px;
+        height: auto;
+     }
+     .galeria .galeria01 .divGaleria2 img {
+         width: 350px;
+         height: auto;
+      }
+      
+    .dondeEstamos iframe {
+        width: 300px;
+        height: 225px;
+        margin: 0px;
+    }
+    .flex-contaiiner .combos1 div img {
+        width: 350px;
+        height: auto;
+        }
+}   
+
+/* -------436PX-------- */
+
+@media screen and (max-width: 436px) {
+    .header {
+        height: 18vh;
+    }
+    .galeria .galeria01 {
+       background-size: 250px;
+    }
+    .galeria .galeria01 .divGaleria1 img {
+       width: 325px;
+       height: auto;
+       padding: 8px 0px 8px 0px;
+    }
+    .galeria .galeria01 .divGaleria2 img {
+        width: 325px;
+        height: auto;
+        padding: 8px 0px 8px 0px;
+    }
+        
+    .dondeEstamos iframe {
+        width: 200px;
+        height: 150px;
+        margin: 0px;
+        }
+    .flex-contaiiner .combos1 div img {
+        width: 300px;
+        height: auto;
+        }
+    .flex-contaiiner .combos1 .comboLight {
+        padding: 12px;
+    }
+    .flex-contaiiner .combos1 .comboAmericano {
+        padding: 12px;
+    }
+    .flex-contaiiner .combos1 .comboLaccho {
+        padding: 12px;
+    }
+
+    .flex-contaiiner .combos1 .comboLight img:hover{
+        transform: scale(1.1);
+    }
+    .flex-contaiiner .combos1 .comboAmericano img:hover{
+        transform: scale(1.1);
+    }
+    .flex-contaiiner .combos1 .comboLaccho img:hover{
+        transform: scale(1.1);
+    }
+
+    .galeria .galeria01 .divGaleria1 .imgG1:hover{
+        transform: scale(1.1);
+    }
+    .galeria .galeria01 .divGaleria1 .imgG2:hover{
+        transform: scale(1.1);
+    }
+    .galeria .galeria01 .divGaleria1 .imgG3:hover{
+        transform: scale(1.1);
+    }
+    .galeria .galeria01 .divGaleria2 .imgG4:hover{
+        transform: scale(1.1);
+    }
+    .galeria .galeria01 .divGaleria2 .imgG5:hover{
+        transform: scale(1.1);
+    }
+    .galeria .galeria01 .divGaleria2 .imgG6:hover{
+        transform: scale(1.1);
+    }
+    .nosotros {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .galeria .galeria01 .divGaleria1 img {
+        width: 300px;
+        height: auto;
+        padding: 8px 0px 8px 0px;
+     }
+     .galeria .galeria01 .divGaleria2 img {
+         width: 300px;
+         height: auto;
+         padding: 8px 0px 8px 0px;
+      }
+      .dondeEstamos iframe {
+        width: 175px;
+      }
+      .nuestrosCafes .espreso:hover {
+        transform: scale(1.1);
+    }
+    .nuestrosCafes .americano:hover {
+        transform: scale(1.1);
+    }
+    .nuestrosCafes .latte:hover {
+        transform: scale(1.1);
+    }
+    .nuestrosCafes .dobleEspreso:hover {
+        transform: scale(1.1);
+    }
+    .nuestrosCafes .macchiato:hover {
+        transform: scale(1.1);
+    }
+    .nuestrosCafes .cafeVienes:hover {
+        transform: scale(1.1);
+    }
+    .hero .fixed {
+        display: none;
+    }
+}

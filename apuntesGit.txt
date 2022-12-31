@@ -13,3 +13,13 @@ CLASE DE GITHUB (repaso en 1:16 min)
 
 para crear enlace del sitio:
 repositorio>settings>pages
+
+__________________________________________________
+SASS II
+
+para ejecuar el robotito que compila codigo de "estilos.scss" a "style.css" :
+npm run watch-css
+
+
+!EXTENDS
+% - placeholder(la palabra PH hace referencia al signo % , que es la forma en que llamamos a los extends)

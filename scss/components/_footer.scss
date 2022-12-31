@@ -1,0 +1,12 @@
+footer {
+    background-color: #252627;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    grid-area: footer;
+}
+footer section a img {
+    width: 60px;
+    height: 60px;
+}

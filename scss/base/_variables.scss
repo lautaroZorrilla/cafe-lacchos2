@@ -1,0 +1,39 @@
+// vaiables: como le dan nombre a un valor para poder reusarlo, actualizarlo o reutilizarlo.
+// tambien son reservas de memoria para almacenar datos.
+
+// variables
+$color-negro-principal: #252627;
+$color-blanco-principal: #FFFAFF;
+$color-rojo-principal: #BB0A21;
+
+// listas
+$font-sizes:
+14px,
+16px,
+18.72px,
+20px,
+23.745px,
+24px,
+27.49px,
+50px,;
+
+// maps
+$titulo:(
+    posicion-titulo:center,
+    margin:20px,
+    color-texto:#252627,
+);
+
+// extends
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+// mixin
+@mixin fixed ($posit, $bott, $align){
+    position: $posit;
+    bottom: $bott;
+    text-align: $align;
+}

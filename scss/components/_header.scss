@@ -1,0 +1,44 @@
+@import "../base/variables";
+header{
+    background-color: $color-negro-principal;
+    width: 100%;
+    height: 15vh;
+    position: sticky; 
+    /* --POSITION: (estaba como position: fixed) */
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    z-index: 10;
+    a{
+        padding: 5px;
+        img{
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+        }
+    }
+    nav{
+        ul{
+            margin-bottom: 0px;
+            display: flex;
+            list-style: none;
+            li{
+                margin: 3px 6px 3px 6px;
+                text-decoration: none;
+                a{
+                    color:$color-blanco-principal;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: nth($font-sizes, 2);
+                    text-decoration: none;
+                    transition: 0.8s;
+                    &:hover{
+                        background-color: $color-rojo-principal;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,390 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  background-color: #252627;
+  width: 100%;
+  height: 15vh;
+  position: sticky;
+  /* --POSITION: (estaba como position: fixed) */
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  z-index: 10; }
+  header a {
+    padding: 5px; }
+    header a img {
+      width: 60px;
+      height: 60px;
+      background-size: cover; }
+  header nav ul {
+    margin-bottom: 0px;
+    display: flex;
+    list-style: none; }
+    header nav ul li {
+      margin: 3px 6px 3px 6px;
+      text-decoration: none; }
+      header nav ul li a {
+        color: #FFFAFF;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        transition: 0.8s; }
+        header nav ul li a:hover {
+          background-color: #BB0A21; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main {
+  grid-area: main; }
+
+.hero {
+  text-align: center;
+  background-image: url(../img/fondo.jpg);
+  width: 100%;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  border-radius: 5px; }
+  .hero h1 {
+    color: #BB0A21;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    background-color: #FFFAFF;
+    padding: 10px;
+    border-radius: 5px; }
+  .hero p {
+    color: #FFFAFF;
+    font-size: 20px;
+    padding: 5px; }
+  .hero a {
+    text-decoration: none;
+    color: #FFFAFF;
+    font-size: 20px;
+    background-color: #252627;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 1s; }
+    .hero a:hover {
+      transform: scale(1.2);
+      background-color: #BB0A21; }
+  .hero .fixed {
+    position: fixed;
+    bottom: 15%;
+    text-align: center;
+    right: 5%;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #252627;
+    background-color: #FFFAFF;
+    color: #252627;
+    border-radius: 5px;
+    font-size: 16px; }
+
+.galeria {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  .galeria h2 {
+    text-align: center; }
+  .galeria .galeria01 div img {
+    padding: 10px; }
+  .galeria .galeria01 .divgaleria1 .imgG1 {
+    transform: scale(1.2); }
+  .galeria .galeria01 .divgaleria1 .imgG2 {
+    transform: scale(1.2); }
+  .galeria .galeria01 .divgaleria1 .imgG3 {
+    transform: scale(1.2); }
+  .galeria .galeria01 .divgaleria2 .imgG4 {
+    transform: scale(1.2); }
+  .galeria .galeria01 .divgaleria2 .imgG5 {
+    transform: scale(1.2); }
+  .galeria .galeria01 .divgaleria2 .imgG6 {
+    transform: scale(1.2); }
+
+.dondeEstamos {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 50px; }
+  .dondeEstamos h2 {
+    text-align: center; }
+
+.nuestrosCafes {
+  text-align: center; }
+  .nuestrosCafes div {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .nuestrosCafes div .espreso:hover {
+      transform: scale(1.2); }
+    .nuestrosCafes div h3 {
+      text-align: center;
+      margin: 20px;
+      color: #252627; }
+  .nuestrosCafes div .americano:hover {
+    transform: scale(1.2); }
+  .nuestrosCafes div h3 {
+    text-align: center;
+    margin: 20px;
+    color: #252627; }
+  .nuestrosCafes div .latte:hover {
+    transform: scale(1.2); }
+  .nuestrosCafes div h3 {
+    text-align: center;
+    margin: 20px;
+    color: #252627; }
+  .nuestrosCafes div .dobleEspreso:hover {
+    transform: scale(1.2); }
+  .nuestrosCafes div h3 {
+    text-align: center;
+    margin: 20px; }
+  .nuestrosCafes div .macchiato:hover {
+    transform: scale(1.2); }
+  .nuestrosCafes div h3 {
+    text-align: center;
+    margin: 20px; }
+  .nuestrosCafes div .cafeVienes:hover {
+    transform: scale(1.2); }
+  .nuestrosCafes div h3 {
+    text-align: center;
+    margin: 20px; }
+
+.flex-contaiiner {
+  width: 100%;
+  background-color: #FFFAFF;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap; }
+  .flex-contaiiner .combos1 .comboLight {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px; }
+  .flex-contaiiner .combos1 img:hover {
+    transform: scale(1.2); }
+  .flex-contaiiner .combos1 .comboAmericano {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px; }
+  .flex-contaiiner .combos1 img:hover {
+    transform: scale(1.2); }
+  .flex-contaiiner .combos1 .comboLaccho {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px; }
+  .flex-contaiiner .combos1 img:hover {
+    transform: scale(1.2); }
+
+.nosotros {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 75vh; }
+
+.mainContacto {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 75vh; }
+  .mainContacto .contacto {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    border: 3px solid #252627;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px; }
+    .mainContacto .contacto:hover {
+      border: 3px solid #BB0A21; }
+    .mainContacto .contacto .form div {
+      padding: 5px; }
+      .mainContacto .contacto .form div input:hover {
+        border: 3px solid #BB0A21; }
+
+footer {
+  background-color: #252627;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  grid-area: footer; }
+
+footer section a img {
+  width: 60px;
+  height: 60px; }
+
+/* --MEDIA QUERY-- */
+/* -------1275 PX-------- */
+@media screen and (max-width: 1275px) {
+  .galeria .galeria01 {
+    display: flex;
+    align-items: center;
+    flex-flow: row; }
+  .galeria .galeria01 .divGaleria1 {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap; }
+  .galeria .galeria01 .divGaleria2 {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap; } }
+
+/* -------850PX-------- */
+@media screen and (max-width: 850px) {
+  .hero h1 {
+    font-size: 45px;
+    padding: 9px; }
+  .galeria .galeria01 {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap; }
+  .dondeEstamos {
+    margin: 0px;
+    padding: 30px 0px 30px 0px; }
+  /* --COMBOS-- */
+  .flex-contaiiner .combos1 div img {
+    width: 400px;
+    height: auto; }
+  .flex-contaiiner .combos1 .comboLight {
+    padding: 20px; }
+  .flex-contaiiner .combos1 .comboAmericano {
+    padding: 20px; }
+  .flex-contaiiner .combos1 .comboLaccho {
+    padding: 20px; } }
+
+@media screen and (max-width: 530px) {
+  .header nav ul li a {
+    padding: 0px; }
+  .galeria .galeria01 {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap; } }
+
+/* -------478PX-------- */
+@media screen and (max-width: 478px) {
+  .header {
+    flex-direction: column; }
+  .header a {
+    padding: 0px; }
+  .header nav ul li {
+    padding: 0px 0px 6px 0px; }
+  .hero h1 {
+    font-size: 40px;
+    padding: 8px;
+    word-spacing: -2px; }
+  .galeria .galeria01 {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap; }
+  .galeria .galeria01 .divGaleria1 img {
+    width: 350px;
+    height: auto; }
+  .galeria .galeria01 .divGaleria2 img {
+    width: 350px;
+    height: auto; }
+  .dondeEstamos iframe {
+    width: 300px;
+    height: 225px;
+    margin: 0px; }
+  .flex-contaiiner .combos1 div img {
+    width: 350px;
+    height: auto; } }
+
+/* -------436PX-------- */
+@media screen and (max-width: 436px) {
+  .header {
+    height: 18vh; }
+  .galeria .galeria01 {
+    background-size: 250px; }
+  .galeria .galeria01 .divGaleria1 img {
+    width: 325px;
+    height: auto;
+    padding: 8px 0px 8px 0px; }
+  .galeria .galeria01 .divGaleria2 img {
+    width: 325px;
+    height: auto;
+    padding: 8px 0px 8px 0px; }
+  .dondeEstamos iframe {
+    width: 200px;
+    height: 150px;
+    margin: 0px; }
+  .flex-contaiiner .combos1 div img {
+    width: 300px;
+    height: auto; }
+  .flex-contaiiner .combos1 .comboLight {
+    padding: 12px; }
+  .flex-contaiiner .combos1 .comboAmericano {
+    padding: 12px; }
+  .flex-contaiiner .combos1 .comboLaccho {
+    padding: 12px; }
+  .flex-contaiiner .combos1 .comboLight img:hover {
+    transform: scale(1.1); }
+  .flex-contaiiner .combos1 .comboAmericano img:hover {
+    transform: scale(1.1); }
+  .flex-contaiiner .combos1 .comboLaccho img:hover {
+    transform: scale(1.1); }
+  .galeria .galeria01 .divGaleria1 .imgG1:hover {
+    transform: scale(1.1); }
+  .galeria .galeria01 .divGaleria1 .imgG2:hover {
+    transform: scale(1.1); }
+  .galeria .galeria01 .divGaleria1 .imgG3:hover {
+    transform: scale(1.1); }
+  .galeria .galeria01 .divGaleria2 .imgG4:hover {
+    transform: scale(1.1); }
+  .galeria .galeria01 .divGaleria2 .imgG5:hover {
+    transform: scale(1.1); }
+  .galeria .galeria01 .divGaleria2 .imgG6:hover {
+    transform: scale(1.1); }
+  .nosotros {
+    height: auto; } }
+
+@media screen and (max-width: 361px) {
+  .galeria .galeria01 .divGaleria1 img {
+    width: 300px;
+    height: auto;
+    padding: 8px 0px 8px 0px; }
+  .galeria .galeria01 .divGaleria2 img {
+    width: 300px;
+    height: auto;
+    padding: 8px 0px 8px 0px; }
+  .dondeEstamos iframe {
+    width: 175px; }
+  .nuestrosCafes .espreso:hover {
+    transform: scale(1.1); }
+  .nuestrosCafes .americano:hover {
+    transform: scale(1.1); }
+  .nuestrosCafes .latte:hover {
+    transform: scale(1.1); }
+  .nuestrosCafes .dobleEspreso:hover {
+    transform: scale(1.1); }
+  .nuestrosCafes .macchiato:hover {
+    transform: scale(1.1); }
+  .nuestrosCafes .cafeVienes:hover {
+    transform: scale(1.1); }
+  .hero .fixed {
+    display: none; } }

@@ -1,0 +1,260 @@
+@import "../base/variables";
+
+main {
+    grid-area: main;
+    }
+
+.hero{
+    text-align: center;
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @extend %flex;
+    flex-direction: column;
+    border-radius: 5px;
+    h1{
+        color: #BB0A21;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: nth($font-sizes, 8);
+    background-color: #FFFAFF;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    p{
+        color: #FFFAFF;
+        font-size: nth($font-sizes, 4);
+        padding: 5px;
+    }
+    a{
+        text-decoration: none;
+    color: #FFFAFF;
+    font-size: nth($font-sizes, 4);
+    background-color: #252627;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.2);
+        background-color: #BB0A21;
+    }
+    }
+
+   .fixed{
+    @include fixed(fixed, 15%, center);
+    right: 5%;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #252627;
+    background-color: #FFFAFF;
+    color: #252627;
+    border-radius: 5px;
+    font-size: nth($font-sizes, 2);
+   }
+}
+
+.galeria{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        text-align: center;
+    }
+    .galeria01{
+        div{
+            img{
+                padding: 10px;
+            }
+        }
+        .divgaleria1{
+            .imgG1{
+                transform: scale(1.2);
+            }
+            .imgG2{
+                transform: scale(1.2);
+            }
+            .imgG3{
+                transform: scale(1.2);
+            }
+        }
+        .divgaleria2{
+            .imgG4{
+                transform: scale(1.2);
+            }
+            .imgG5{
+                transform: scale(1.2);
+            }
+            .imgG6{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+}
+
+.dondeEstamos {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 50px;
+    h2{
+        text-align: center;
+    }
+}
+
+.nuestrosCafes {
+    text-align: center;
+    div {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .espreso {
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        h3 {
+            text-align: map-get($titulo, posicion-titulo);
+            margin: map-get($titulo, margin);
+            color: map-get($titulo, color-texto);
+        }
+    }
+    div {
+        .americano {
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        h3 {
+            text-align: map-get($titulo, posicion-titulo);
+            margin: map-get($titulo, margin);
+            color: map-get($titulo, color-texto);
+        }
+    }
+    div {
+        .latte {
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        h3 {
+            text-align: map-get($titulo, posicion-titulo);
+            margin: map-get($titulo, margin);
+            color: map-get($titulo, color-texto);
+        }
+    }
+    div {
+        .dobleEspreso {
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        h3 {
+            text-align: center;
+            margin: 20px;
+        }
+    }
+    div {
+        .macchiato {
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        h3 {
+            text-align: center;
+            margin: 20px;
+        }
+    }
+    div {
+        .cafeVienes {
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        h3 {
+            text-align: center;
+            margin: 20px;
+        }
+    }
+}
+
+.flex-contaiiner{
+    width: 100%;
+    background-color: #FFFAFF;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    .combos1{
+        .comboLight{
+            display: flex;
+            align-items: center;
+            flex-flow: column wrap;
+            padding: 20px;
+            }
+            img{
+                &:hover{
+                transform: scale(1.2);
+            }
+        }
+        .comboAmericano{
+            display: flex;
+            align-items: center;
+            flex-flow: column wrap;
+            padding: 20px;
+            }
+            img{
+                &:hover{
+                transform: scale(1.2);
+            }
+        }
+        .comboLaccho{
+            display: flex;
+            align-items: center;
+            flex-flow: column wrap;
+            padding: 20px;
+            }
+            img{
+                &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.nosotros {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 75vh;
+}
+.mainContacto {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 75vh;
+    .contacto{
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        border: 3px solid #252627;
+        padding: 10px;
+        margin: 15px;
+        border-radius: 5px;
+        &:hover{
+            border: 3px solid #BB0A21;
+        }
+        .form{
+            div{
+                padding: 5px;
+                input{
+                    &:hover{
+                        border: 3px solid #BB0A21;
+                    }
+                }
+            } 
+        }
+    }
+}
